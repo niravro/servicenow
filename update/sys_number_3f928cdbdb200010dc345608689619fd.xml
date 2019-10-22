@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_number">
+    <sys_number action="INSERT_OR_UPDATE">
+        <category display_value="" name="x_308156_test_app_user">x_308156_test_app_user</category>
+        <maximum_digits>5</maximum_digits>
+        <number>100</number>
+        <prefix>U</prefix>
+        <sys_class_name>sys_number</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-22 10:01:34</sys_created_on>
+        <sys_id>3f928cdbdb200010dc345608689619fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>U</sys_name>
+        <sys_package display_value="test app" source="x_308156_test_app">c82fb74bdb200010dc34560868961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test app">c82fb74bdb200010dc34560868961984</sys_scope>
+        <sys_update_name>sys_number_3f928cdbdb200010dc345608689619fd</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-22 10:01:34</sys_updated_on>
+    </sys_number>
+</record_update>
