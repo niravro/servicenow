@@ -15,6 +15,7 @@
             </choice>
         </element>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
+        <element label="TFS Path" max_length="60" name="tfs_path" type="string"/>
         <element display="true" label="Team Name" max_length="20" name="user_name" type="string"/>
         <index name="index">
             <element name="contractor"/>
