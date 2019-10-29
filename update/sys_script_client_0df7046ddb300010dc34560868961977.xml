@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update sys_domain="global" table="sys_script_client">
+    <sys_script_client action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <applies_extended>false</applies_extended>
+        <condition/>
+        <description>On selecting team name value, auto populate the team tfs field.</description>
+        <field>team_name</field>
+        <global>true</global>
+        <isolate_script>true</isolate_script>
+        <messages/>
+        <name>Auto populate Team TFS</name>
+        <order/>
+        <script><![CDATA[function onChange(control, oldValue, newValue, isLoading, isTemplate) {
+   if (isLoading || newValue === '') {
+      return;
+   }
+
+   //Get a glide record object using reference field.
+	//Update the tfs path using this record.
+	if(newValue != oldValue){
+		var tname = g_form.getReference('team_name',doAlert);
+	
+		function doAlert(tname)
+		{
+			g_form.setValue('team_tfs',tname.tfs_path);
+		}
+	}
+	
+}]]></script>
+        <sys_class_name>sys_script_client</sys_class_name>
+        <sys_created_by>admin</sys_created_by>
+        <sys_created_on>2019-10-29 10:12:52</sys_created_on>
+        <sys_domain>global</sys_domain>
+        <sys_domain_path>/</sys_domain_path>
+        <sys_id>0df7046ddb300010dc34560868961977</sys_id>
+        <sys_mod_count>10</sys_mod_count>
+        <sys_name>Auto populate Team TFS</sys_name>
+        <sys_overrides/>
+        <sys_package display_value="test app" source="x_308156_test_app">c82fb74bdb200010dc34560868961984</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="test app">c82fb74bdb200010dc34560868961984</sys_scope>
+        <sys_update_name>sys_script_client_0df7046ddb300010dc34560868961977</sys_update_name>
+        <sys_updated_by>admin</sys_updated_by>
+        <sys_updated_on>2019-10-29 11:22:01</sys_updated_on>
+        <table>x_308156_test_app_contractor</table>
+        <type>onChange</type>
+        <ui_type>0</ui_type>
+        <view/>
+    </sys_script_client>
+</record_update>

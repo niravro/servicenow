@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?><database>
     <element label="contractor" max_length="40" name="x_308156_test_app_contractor" type="collection">
         <element display="true" label="Contractor ID" max_length="10" name="contractor_id" type="integer"/>
-        <element label="Name" max_length="20" name="name" type="string"/>
+        <element label="Name" mandatory="true" max_length="20" name="name" type="string"/>
         <element attributes="ignore_filter_on_new=true" default="javascript:global.getNextObjNumberPadded();" label="Number" max_length="40" name="number" type="string"/>
         <element default="javascript:current.getTableName();" label="Class" max_length="80" name="sys_class_name" type="sys_class_name"/>
         <element label="Team name" max_length="32" name="team_name" reference="x_308156_test_app_user" type="reference"/>
